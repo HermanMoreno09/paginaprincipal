@@ -3,7 +3,7 @@ const statusDiv = document.getElementById('form-status');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  statusDiv.textContent = 'https://backend-1-6p5l.onrender.com/api/servicios/';
+  statusDiv.textContent = 'https://backend-1-6p5l.onrender.com/api/servicios';
   statusDiv.className = 'form-status';
 
   const formData = {
