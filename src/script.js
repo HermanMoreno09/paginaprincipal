@@ -3,7 +3,7 @@ const statusDiv = document.getElementById('form-status');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  statusDiv.textContent = 'https://backend-1-6p5l.onrender.com/api/servicios/';
+  statusDiv.textContent = '';
   statusDiv.className = 'form-status';
 
   const formData = {
@@ -18,7 +18,7 @@ form.addEventListener('submit', async (e) => {
   console.log('Datos a enviar:', formData);
 
   try {
-    const response = await fetch('', {
+    const response = await fetch('https://backend-1-6p5l.onrender.com/api/servicios/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
